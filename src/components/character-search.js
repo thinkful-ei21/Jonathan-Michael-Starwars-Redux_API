@@ -22,6 +22,7 @@ export class CharacterSearch extends React.Component {
   
   mainSearch(e){
     e.preventDefault();
+    console.log('Got here', this.input.value)
     this.props.dispatch(searchCharacters(this.input.value))
   }
 
